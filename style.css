@@ -1,0 +1,140 @@
+:root {
+  --main-color: #2196f3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.game {
+  height: 100vh;
+  background-color: #eee;
+}
+
+.name {
+  padding: 15px;
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 15px auto 0;
+}
+
+@media (max-width:940px){
+  .container {
+    margin: 15px 20px 0;
+  }
+}
+.message {
+  padding: 15px;
+  margin: 15px 0;
+  background-color: white;
+  text-align: center;
+}
+
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.message span::after {
+  content: " ]";
+}
+
+.message span::before {
+  content: "[ ";
+}
+
+.start {
+  padding: 20px;
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start:hover {
+  background-color: #02796d;
+}
+
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+  /* I Can't Copy The Word */
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+  border: 3px solid var(--main-color);
+  border-radius: 6px;
+  text-transform: capitalize;
+  caret-color: var(--main-color);
+  outline: none;
+  font-size: 25px;
+}
+
+.upcoming-words {
+  background-color: white;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.upcoming-words div {
+  color: white;
+  background-color: var(--main-color);
+  font-weight: bold;
+  margin: 4px;
+  padding: 5px;
+}
+
+.control {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+.finish .good {
+  color: var(--main-color);
+}
+
+.finish .bad {
+  color: red;
+}
